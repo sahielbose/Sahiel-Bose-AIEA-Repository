@@ -1,8 +1,10 @@
+import os
+
 from openai import OpenAI
 from pyswip import Prolog
 
-# Initialize OpenAI client with API key
-client = OpenAI(api_key="my_actual_api")
+# Read the API key from the environment so credentials are never committed.
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 def fetch_prolog_code(prompt):
     """

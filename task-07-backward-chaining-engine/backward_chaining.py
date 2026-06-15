@@ -1,3 +1,15 @@
+"""A minimal backward-chaining inference engine.
+
+This module implements first-order resolution from first principles, without any
+external logic library. It provides unification with substitution, a recursive
+backward-chaining search over a knowledge base of (head, body) clauses, and a
+simple ask interface. The example at the bottom derives a grandparent relation
+from parent facts, mirroring the Prolog tasks in pure Python.
+
+Terms are represented as tuples, and variables are strings that start with "?".
+"""
+
+
 #check if x is a variable
 def is_var(x):
     return isinstance(x, str) and x.startswith('?')

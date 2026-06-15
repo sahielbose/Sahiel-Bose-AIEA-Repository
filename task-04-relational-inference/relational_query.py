@@ -1,3 +1,10 @@
+"""Resolve a conjunctive query over the family knowledge base.
+
+The query parent(john, X), parent(X, anna) asks for every X that is both a
+child of john and a parent of anna, exercising Prolog's ability to chain
+multiple goals and bind shared variables across them.
+"""
+
 from pyswip import Prolog
 
 # Initialize Prolog

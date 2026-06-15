@@ -1,0 +1,6 @@
+# Python dependencies for the AIEA Lab onboarding tasks.
+# Tasks that use Prolog also require a local SWI-Prolog installation
+# (https://www.swi-prolog.org/), which pyswip binds to.
+
+openai>=1.0.0
+pyswip>=0.2.11
